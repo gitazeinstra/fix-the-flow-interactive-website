@@ -292,7 +292,7 @@ label {
 }
 
 .contact--input__container input {
-    width: 90%;
+    width: 240rem;
     height: 40px;
     padding: 5px;
     border-radius: 0 var(--form-border) var(--form-border) 0;
@@ -313,6 +313,7 @@ label {
 
 textarea {
     height: 10rem;
+    width: ;
 }
 
 /*high contrast styling*/
