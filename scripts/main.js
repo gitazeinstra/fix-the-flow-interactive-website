@@ -48,17 +48,17 @@ toggleButton.addEventListener("click", function() {
     }
 });
 
-//prevent refresh submit
-//Get form element
-const form = document.querySelector(".contact__form");
-function submitForm(e){
-
-    //Preventing page refresh
+//submit
+const form = document.querySelector("form");
+function contactSubmit(e) {
+    document.querySelector(".submit").value = "Verzonden";
+    //maak formulier leeg
+    form.reset();
+    //voorkom refresh
     e.preventDefault();
 }
 
-//Calling a function during form submission.
-form.addEventListener('submit', submitForm);
+form.addEventListener("submit", contactSubmit);
 
 AOS.init({
     duration: 1200,

@@ -82,7 +82,7 @@
     <div class="home__container">
         <h1 data-aos="fade-down">b-RAIN</h1>
         <h2 class="h2--contrast" data-aos="fade-down " data-aos-delay="100">Wees slim met ons water, be b-RAIN!</h2>
-        <div class="home__buttons" data-aos="fade-up" data-aos-delay="150">
+        <div class="home__buttons button" data-aos="fade-up" data-aos-delay="150">
             <a class="buttons--contrast" href="#project">Meer info</a>
             <a class="buttons--contrast" href="#contact">Contact</a>
         </div>
@@ -123,17 +123,41 @@
 
 <!-- contact page -->
 <section id="contact" class="contact">
-    <form class="contact__form">
+    <div class="contact-text__container">
+        <h3>Help mee aan een oplossing tegen waterovererspilling!</h3>
+        <p>Interesse om te investeren in ons project? Of heeft u vragen? Neem via het forumulier contact met ons op.</p>
+    </div>
+
+    <form class="contact__form" onsubmit="">
         <label for="name">Naam:</label>
-        <input type="text" id="name" name="name">
+        <div class="contact--input__container">
+            <span class="contact--icon">
+                <i class="ri-user-fill"></i>
+            </span>
+            <input type="text" id="name" name="name" placeholder="Naam" required>
+        </div>
+
         <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email">
+        <div class="contact--input__container">
+            <span class="contact--icon">
+                <i class="ri-mail-fill"></i>
+            </span>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+
         <label for="tel">Telefoonnummer:</label>
-        <input type="tel" id="tel" name="tel" pattern="[0-9]{10}">
+        <div class="contact--input__container">
+            <span class="contact--icon">
+                <i class="ri-phone-fill"></i>
+            </span>
+            <input type="tel" id="tel" name="tel" pattern="[0-9]{10}" placeholder="Telefoonnumer" required>
+        </div>
+
         <label for="message">Bericht:</label>
-        <textarea id="message" name="message"></textarea>
-        <input type="submit" value="submit" class="submit">
+        <textarea id="message" name="message" placeholder="Type hier je bericht..." required></textarea>
+        <input type="submit" value="Verzenden" class="submit">
     </form>
+    <p class="log"></p>
 </section>
 
 <footer>
