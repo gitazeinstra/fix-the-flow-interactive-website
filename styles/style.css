@@ -261,7 +261,7 @@ label {
     border-radius: 5px;
 }
 
-.contact__form input:focus, textarea:focus {
+.contact__form input:focus, .contact__form textarea:focus {
     border: 3px solid var(--accent-color-3);
     outline: none;
 }
@@ -276,7 +276,7 @@ label {
 
 .contact--icon {
     padding: 10px;
-    width: 10%;
+    width: 3rem;
     background-color: var(--accent-color-4);
     text-align: center;
     border-radius: var(--form-border) 0 0 var(--form-border);
