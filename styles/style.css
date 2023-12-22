@@ -313,7 +313,6 @@ label {
 
 textarea {
     height: 10rem;
-    width: ;
 }
 
 /*high contrast styling*/
@@ -440,6 +439,44 @@ textarea {
     .nav__link {
         padding-inline: 1rem;
     }
+}
+
+@media screen and (max-width: 636px) {
+    .nav__data img {
+        margin-left: 0;
+        width: 7rem;
+        height: 4rem;
+    }
+
+    .home {
+        height: 55vh;
+    }
+
+    .home__container {
+        margin: -7rem 0 0 9rem;
+
+    }
+
+    .home__container h1{
+        font-size: 4rem;
+    }
+
+    .home__container h2{
+        font-size: 2rem;
+    }
+
+    .home__buttons {
+        width: 12rem;
+    }
+
+    .home__buttons a {
+        font-size: 1rem;
+    }
+
+    .waterton {
+        height: 50rem;
+    }
+
 }
 
 /* For large devices */

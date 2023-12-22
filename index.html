@@ -129,7 +129,7 @@
     </div>
 
     <form class="contact__form" onsubmit="">
-        <label for="name">Naam:</label>
+        <label for="name">Naam*:</label>
         <div class="contact--input__container">
             <span class="contact--icon">
                 <i class="ri-user-fill"></i>
@@ -137,7 +137,7 @@
             <input type="text" id="name" name="name" placeholder="Naam" required>
         </div>
 
-        <label for="email">E-mail:</label>
+        <label for="email">E-mail*:</label>
         <div class="contact--input__container">
             <span class="contact--icon">
                 <i class="ri-mail-fill"></i>
@@ -150,10 +150,10 @@
             <span class="contact--icon">
                 <i class="ri-phone-fill"></i>
             </span>
-            <input type="tel" id="tel" name="tel" pattern="[0-9]{10}" placeholder="Telefoonnumer" required>
+            <input type="tel" id="tel" name="tel" pattern="[0-9]{10}" placeholder="Telefoonnumer">
         </div>
 
-        <label for="message">Bericht:</label>
+        <label for="message">Bericht*:</label>
         <textarea id="message" name="message" placeholder="Type hier je bericht..." required></textarea>
         <input type="submit" value="Verzenden" class="submit">
     </form>
